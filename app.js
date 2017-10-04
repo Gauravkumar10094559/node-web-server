@@ -70,6 +70,8 @@ app.get("/bad", (req, res) => {
 	});
 });
 
-app.listen(4000, () => {
-	console.log("server has started");
+
+const port=process.env.PORT || 3000;
+app.listen(port, () => {
+	console.log(`server has started on ${port}`);
 });
